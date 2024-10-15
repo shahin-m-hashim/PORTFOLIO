@@ -12,40 +12,48 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-sm-5">
-            <a class="navbar-brand" id="nav-link" href="#main-content">SHAHIN M HASHIM</a>
+        <div class="container">
+            <a class="navbar-brand nav-link" id="nav-link" href="#home">SHAHIN M HASHIM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown"
                 aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: white; height: 100%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: white;">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </span>
             </button>
-            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarDropdown">
-                <ul class="navbar-nav" style="margin-left: auto; gap: .5em;">
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav" style="margin-left: auto;">
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#main-content">Home</a>
+                        <a class="nav-link" id="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#section-2">About</a>
+                        <a class="nav-link" id="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#section-3">Expertise</a>
+                        <a class="nav-link" id="nav-link" href="#expertise">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#section-4">Projects</a>
+                        <a class="nav-link" id="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#section-5">Contact</a>
+                        <a class="nav-link" id="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <main class="container">
+        <section class="section-1 row primary-bg"></section>
+        <section class="section-2 row secondary-bg"></section>
+        <section class="section-3 row primary-bg"></section>
+        <section class="section-4 row secondary-bg"></section>
+    </main>
+
     <script src="./bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="index.js"></script>
 </body>
 

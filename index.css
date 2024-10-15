@@ -17,7 +17,6 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #270622;
 }
 
 * {
@@ -52,4 +51,18 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.primary-bg {
+  background-color: var(--bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-bg-color);
 }
