@@ -287,8 +287,8 @@ header {
 }
 
 svg.radial-progress {
-  width: 50%;
   margin: 0;
+  width: 50%;
   padding: 0.5em;
   border-radius: 50%;
   transform: rotate(-90deg);
@@ -301,16 +301,17 @@ svg.radial-progress circle {
 }
 
 svg.radial-progress circle.bar-static {
+  stroke: #00ffee;
   stroke-width: 10px;
-  stroke: #00ffee !important;
 }
 
-svg.radial-progress circle.bar--animated {
+svg.radial-progress circle.bar-animated {
   stroke: #001aff;
   stroke-width: 5px;
   stroke-linecap: round;
   stroke-dasharray: 219.91148575129;
   stroke-dashoffset: 219.91148575129;
+  transition: stroke-dashoffset 3.5s ease;
 }
 
 svg.radial-progress text {

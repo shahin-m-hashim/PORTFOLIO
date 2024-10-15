@@ -1,3 +1,79 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const skills = {
+    HTML: 100,
+    CSS: 100,
+    "Java Script": 100,
+    Bootstrap: 90,
+    React: 95,
+    "Type Script": 60,
+    Tailwind: 80,
+    "Express JS": 60,
+    "Mongo DB": 60,
+    Python: 70,
+    SQL: 60,
+    GIT: 90,
+  };
+
+  const skillsContainer = document.getElementById("skills");
+
+  for (const [skillName, skillValue] of Object.entries(skills)) {
+    const skillElement = document.createElement("div");
+    skillElement.classList.add("skill");
+    skillElement.setAttribute("data-countervalue", skillValue);
+    skillElement.setAttribute("data-start", true);
+
+    const p = document.createElement("p");
+    p.classList.add("fs-5");
+    p.style.fontWeight = "bold";
+    p.innerText = skillName;
+
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.classList.add("radial-progress");
+    svg.setAttribute("viewBox", "0 0 80 80");
+
+    const staticCircle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+
+    staticCircle.setAttribute("r", "35");
+    staticCircle.setAttribute("cx", "40");
+    staticCircle.setAttribute("cy", "40");
+    staticCircle.classList.add("bar-static");
+
+    const animatedCircle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+
+    animatedCircle.setAttribute("r", "35");
+    animatedCircle.setAttribute("cx", "40");
+    animatedCircle.setAttribute("cy", "40");
+    animatedCircle.classList.add("bar-animated");
+    animatedCircle.setAttribute("id", "progressBar");
+
+    const progressText = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "text"
+    );
+
+    progressText.textContent = "0%";
+    progressText.setAttribute("x", "50%");
+    progressText.setAttribute("y", "57%");
+    progressText.classList.add("progress-text");
+    progressText.setAttribute("id", "progressText");
+    progressText.setAttribute("transform", "matrix(0, 1, -1, 0, 80, 0)");
+
+    svg.appendChild(staticCircle);
+    svg.appendChild(animatedCircle);
+    svg.appendChild(progressText);
+
+    skillElement.appendChild(p);
+    skillElement.appendChild(svg);
+    skillsContainer.appendChild(skillElement);
+  }
+});
+
 window.onload = function () {
   console.log("Welcome To My Portfolio Website");
 
@@ -214,4 +290,45 @@ window.onload = function () {
   ScrollOut({
     targets: ".interest-heading, .interest",
   });
+
+  // Section 3 skills animation
+  function triggerSkillAnimation() {
+    const skillElements = document.querySelectorAll(".skill");
+
+    skillElements.forEach((skill) => {
+      const rect = skill.getBoundingClientRect();
+      const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+      const start = skill.getAttribute("data-start") === "true";
+
+      if (isInView && start) {
+        animateSkillProgress(skill);
+        skill.setAttribute("data-start", "false");
+      }
+    });
+  }
+
+  function animateSkillProgress(skill) {
+    const progressCircle = skill.querySelector("#progressBar");
+    const progressTextEl = skill.querySelector("#progressText");
+    const progress = parseInt(skill.dataset.countervalue);
+
+    const circumference = 219.91148575129;
+    const offset = circumference - (circumference * progress) / 100;
+
+    progressCircle.style.strokeDashoffset = offset;
+
+    let counter = 0;
+    const interval = setInterval(() => {
+      counter++;
+      progressTextEl.textContent = `${counter}%`;
+
+      if (counter >= progress) {
+        clearInterval(interval);
+      }
+    }, 30);
+  }
+
+  window.addEventListener("scroll", triggerSkillAnimation);
+
+  triggerSkillAnimation();
 };
