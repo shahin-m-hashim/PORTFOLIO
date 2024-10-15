@@ -161,4 +161,52 @@ window.onload = function () {
 
   changeText();
   setInterval(changeText, 3500);
+
+  // SCROLL REVEAL Elements
+  const sr = ScrollReveal();
+
+  sr.reveal("#introduction", {
+    delay: 300,
+    reset: true,
+    duration: 300,
+    origin: "bottom",
+    easing: "ease-in",
+    distance: "100px",
+  });
+
+  sr.reveal("#leftReveal", {
+    delay: 200,
+    reset: true,
+    duration: 300,
+    origin: "left",
+    easing: "ease-in",
+    distance: "100px",
+  });
+
+  sr.reveal("#rightReveal", {
+    delay: 200,
+    reset: true,
+    duration: 300,
+    origin: "right",
+    easing: "ease-in",
+    distance: "100px",
+  });
+
+  sr.reveal("#topReveal", {
+    delay: 200,
+    reset: true,
+    duration: 300,
+    origin: "top",
+    easing: "ease-in",
+    distance: "50px",
+  });
+
+  sr.reveal("#bottomReveal", {
+    delay: 200,
+    reset: true,
+    duration: 300,
+    origin: "bottom",
+    easing: "ease-in",
+    distance: "50px",
+  });
 };

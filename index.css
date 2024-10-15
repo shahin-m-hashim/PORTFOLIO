@@ -28,6 +28,10 @@
   background-color: transparent;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -65,7 +69,7 @@ li {
 .bubble-cursor {
   opacity: 1;
   width: 3rem;
-  z-index: 100;
+  z-index: 1500;
   height: 3rem;
   position: fixed;
   border-radius: 50%;
@@ -107,7 +111,7 @@ li {
 }
 
 .navbar {
-  z-index: 10;
+  z-index: 1000;
   position: fixed;
   inset: 0 0 auto 0;
   background-color: #212121 !important;
@@ -268,7 +272,7 @@ header {
 svg.radial-progress {
   width: 50%;
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
   border-radius: 50%;
   transform: rotate(-90deg);
   background-color: rgb(29, 29, 28);
@@ -628,7 +632,7 @@ footer {
 
   /* SECTION 3 */
   .skills {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   /* SECTION 6 */
