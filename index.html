@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAHIN M HASHIM</title>
+    <link rel="icon" href="assets/images/profile-pic.jpg" type="image/x-icon">
+    <title>shahinmhashim</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -12,44 +21,77 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand nav-link" id="nav-link" href="#home">SHAHIN M HASHIM</a>
+        <div class="container-fluid px-sm-5" style="min-width: 320px;">
+            <a class="navbar-brand" id="nav-link" href="#main-content">SHAHIN M HASHIM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown"
                 aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: white; height: 100%;">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarDropdown">
-                <ul class="navbar-nav" style="margin-left: auto;">
+                <ul class="navbar-nav" style="margin-left: auto; gap: .5em;">
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#home">Home</a>
+                        <a class="nav-link" id="nav-link" href="#main-content">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#about">About</a>
+                        <a class="nav-link" id="nav-link" href="#section-2">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#expertise">Expertise</a>
+                        <a class="nav-link" id="nav-link" href="#section-3">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" id="nav-link" href="#section-4">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" id="nav-link" href="#section-5">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="section-1 row primary-bg"></section>
-        <section class="section-2 row secondary-bg"></section>
-        <section class="section-3 row primary-bg"></section>
-        <section class="section-4 row secondary-bg"></section>
+    <main class="container-fluid">
+        <section class="section-1 row px-sm-5 primary-bg">
+            <div class="col-12">
+                <header class="text-center mt-3">
+                    <div class="job-caption">
+                        <span>A&nbsp;Passionate&nbsp;</span>
+                        <span class="word">MERN&nbsp;Stack&nbsp;Web&nbsp;Developer.</span>
+                        <span class="word">React&nbsp;Front&nbsp;End&nbsp;Developer.</span>
+                        <span class="word">Express&nbsp;Back&nbsp;End&nbsp;Developer.</span>
+                    </div>
+                </header>
+
+                <div class="introduction" style="height: 90%;">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="greeting-txt mb-4">Hey I'm</div>
+                        <div class="name-txt mb-4">SHAHIN</div>
+                        <div class="slogan mb-4">
+                            <p>Welcome to my portfolio</p>
+                            <p>I can build Responsive, Clean and Optimized</p>
+                            <p><span id="slogTxt1"></span></p>
+                            <p><span id="slogTxt2"></span></p>
+                        </div>
+                        <div>
+                            <a href="https://drive.google.com/file/d/1AYZf9wZ_agAqHwr7JkEnOWcaqfHWL1ji/view?usp=drive_link"
+                                class="resume-btn">
+                                View Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex justify-content-center">
+                        <img class="img-fluid py-5" src="./assets/images/full-stack-development.png" alt="fullStackImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-2 row px-sm-5 secondary-bg"></section>
+        <section class="section-3 row px-sm-5 primary-bg"></section>
+        <section class="section-4 row px-sm-5 secondary-bg"></section>
     </main>
 
     <script src="./bootstrap/bootstrap.bundle.js"></script>
