@@ -592,6 +592,10 @@ footer {
 /* medium devices */
 
 @media (min-width: 768px) {
+  .navbar-nav {
+    gap: 1.5em;
+  }
+
   h1 {
     font-weight: 600;
     font-size: calc(3.5vw + 0.5rem) !important;

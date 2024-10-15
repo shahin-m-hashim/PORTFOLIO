@@ -1,6 +1,7 @@
 window.onload = function () {
   console.log("Welcome To My Portfolio Website");
 
+  // Custom Mouse Cursor
   let cursorX = 0;
   let cursorY = 0;
   const smoothness = 0.15;
@@ -26,7 +27,7 @@ window.onload = function () {
 
   navLinks.forEach((navLink) => {
     navLink.addEventListener("mouseenter", () => {
-      bubbleCursor.style.transform = "scale(1.3)";
+      bubbleCursor.style.transform = "scale(1.2)";
       bubbleCursor.style.backdropFilter = "blur(0.5px)";
     });
 
@@ -46,6 +47,49 @@ window.onload = function () {
 
     prLink.addEventListener("mouseleave", () => {
       cursorContent.style.opacity = "0";
+    });
+  });
+
+  // Scroll Animation
+  document.querySelectorAll("#nav-link").forEach((navLink) => {
+    navLink.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      let startTime = null;
+      const duration = 500;
+      const defaultOffset = 50;
+
+      const offset = targetId === "#home" ? 0 : defaultOffset;
+
+      const startPosition = window.scrollY;
+      const targetOffset = targetElement.offsetTop - offset;
+      const distance = targetOffset - startPosition;
+
+      // Animation function
+      function animateScroll(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(
+          timeElapsed,
+          startPosition,
+          distance,
+          duration
+        );
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animateScroll);
+      }
+
+      // Easing function for smooth animation
+      function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animateScroll);
+      document.querySelector(".navbar-collapse").classList.toggle("show");
     });
   });
 
