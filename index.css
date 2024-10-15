@@ -43,6 +43,22 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
+p,
+a,
+ul,
+ol,
+header {
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "League Spartan", sans-serif;
+}
+
 a,
 button {
   cursor: none !important;
