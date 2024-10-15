@@ -249,14 +249,31 @@ header {
   transform: rotateX(-90deg);
 }
 
-/* SECTION 3 */
+/* SECTION 2 */
 
-.interests h2,
-.interests p {
+.interest-heading {
   padding: 10px;
+  color: black;
+  transition: 0.5s;
+  transform: scaleX(0);
+  background: #ecdc48;
+  transform-origin: left;
 }
 
-/* SECTION 4 */
+.interest {
+  padding: 10px;
+  color: #ccff00;
+  transition: 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+[data-scroll="in"].interest,
+[data-scroll="in"].interest-heading {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
 .skills {
   gap: 2em;
   display: grid;
@@ -302,7 +319,7 @@ svg.radial-progress text {
   text-shadow: 0 0 5px #0000007a;
 }
 
-/* SECTION 5 */
+/* SECTION 3 */
 
 /* .slide {
   display: none;
@@ -397,7 +414,7 @@ svg.radial-progress text {
   opacity: 1;
 }
 
-/* SECTION 6 */
+/* SECTION 5 */
 .social {
   width: 12vw;
   height: 12vw;

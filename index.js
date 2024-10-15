@@ -209,4 +209,9 @@ window.onload = function () {
     easing: "ease-in",
     distance: "50px",
   });
+
+  // Section 2 interests animation
+  ScrollOut({
+    targets: ".interest-heading, .interest",
+  });
 };
