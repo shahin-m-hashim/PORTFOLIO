@@ -18,13 +18,25 @@
     0 0 150px rgba(18, 247, 255, 0.3);
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
   cursor: none;
   min-width: 320px;
+  background-color: #270622;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  transition: background-color 0.5s ease-in-out;
 }
 
 a,
@@ -48,15 +60,6 @@ p {
 p,
 li {
   font-size: 5vw !important;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 .bubble-cursor {
@@ -143,14 +146,6 @@ section {
 .introduction {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.primary-bg {
-  background-color: var(--bg-color);
-}
-
-.secondary-bg {
-  background-color: var(--secondary-bg-color);
 }
 
 header {

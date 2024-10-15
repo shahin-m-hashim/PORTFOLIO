@@ -50,7 +50,7 @@ window.onload = function () {
     });
   });
 
-  // Scroll Animation
+  // Navigation Link Scroll Animation
   document.querySelectorAll("#nav-link").forEach((navLink) => {
     navLink.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
@@ -90,6 +90,17 @@ window.onload = function () {
 
       requestAnimationFrame(animateScroll);
       document.querySelector(".navbar-collapse").classList.toggle("show");
+    });
+  });
+
+  // Background Scroll Animation
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    sections.forEach((box) => {
+      if (box.getBoundingClientRect().top - 60 <= document.body.scrollTop) {
+        document.body.style.backgroundColor = box.dataset.color;
+      }
     });
   });
 
