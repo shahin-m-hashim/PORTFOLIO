@@ -20,18 +20,17 @@
 
 <body>
     <div id="preload" class="d-none">
-        <div class="bubble-cursor" id="bubbleCursor">
-            <div class="cursor-content" id="cursorContent">Take Me</div>
-        </div>
+        <cursor class="bubble-cursor" id="bubbleCursor">
+            <div class="cursor-content" id="cursorContent">Visit</div>
+        </cursor>
 
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid px-sm-5" style="min-width: 320px;">
-                <a class="navbar-brand" id="nav-link" href="#home">SHAHIN M HASHIM</a>
+            <div class="container">
+                <a class="navbar-brand nav-link" id="nav-link" href="#home">SHAHIN M HASHIM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown"
                     aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                            style="fill: white; height: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: white;">
                             <path
                                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                         </svg>
@@ -59,213 +58,245 @@
             </div>
         </nav>
 
-        <main class="container-fluid">
-            <section id="home" data-color="#270622" class="section-1 row px-sm-5 primary-bg"
-                style="padding-top: 3.5em;">
-                <div class="col-12">
-                    <header class="text-center mt-3">
-                        <div class="job-caption">
-                            <span>A&nbsp;Passionate&nbsp;</span>
-                            <span class="word">MERN&nbsp;Stack&nbsp;Web&nbsp;Developer.</span>
-                            <span class="word">React&nbsp;Front&nbsp;End&nbsp;Developer.</span>
-                            <span class="word">Express&nbsp;Back&nbsp;End&nbsp;Developer.</span>
-                        </div>
-                    </header>
+        <main class="container position-relative">
+            <section id="home" data-color="#270622" class="home row">
+                <div class="col-12 py-5">
+                    <div class="overflow-hidden">
+                        <header class="text-center my-4">
+                            <div class="job-caption">
+                                <span>A&nbsp;Passionate&nbsp;</span>
+                                <span class="word">MERN&nbsp;Stack&nbsp;Web&nbsp;Developer.</span>
+                                <span class="word">React&nbsp;Front&nbsp;End&nbsp;Developer.</span>
+                                <span class="word">Express&nbsp;Back&nbsp;End&nbsp;Developer.</span>
+                            </div>
+                        </header>
 
-                    <div id="introduction" class="introduction" style="height: 90%;">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="greeting-txt mb-4">Hey I'm</div>
-                            <div class="name-txt mb-4">SHAHIN</div>
-                            <div class="slogan mb-4">
-                                <div>Welcome to my portfolio</div>
-                                <div>I can build Responsive, Clean and Optimized</div>
-                                <div><span id="slogTxt1"></span></div>
-                                <div><span id="slogTxt2"></span></div>
+                        <div id="introduction" class="introduction">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="greeting-txt my-3">Hey I'm</div>
+                                <div class="name-txt my-3">SHAHIN</div>
+                                <div class="slogan my-3">
+                                    <div>Welcome to my portfolio</div>
+                                    <div>I can build Responsive, Clean and Optimized</div>
+                                    <div><span id="slogTxt1"></span></div>
+                                    <div><span id="slogTxt2"></span></div>
+                                </div>
+                                <div>
+                                    <a href="https://drive.google.com/file/d/1AYZf9wZ_agAqHwr7JkEnOWcaqfHWL1ji/view?usp=drive_link"
+                                        class="resume-btn">
+                                        View Resume
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <a href="https://drive.google.com/file/d/1AYZf9wZ_agAqHwr7JkEnOWcaqfHWL1ji/view?usp=drive_link"
-                                    class="resume-btn">
-                                    View Resume
-                                </a>
+                            <div class="d-none d-md-flex justify-content-center">
+                                <img class="img-fluid" src="./assets/images/full-stack-development.png"
+                                    alt="fullStackImg">
                             </div>
-                        </div>
-                        <div class="d-none d-md-flex justify-content-center">
-                            <img class="img-fluid py-5" src="./assets/images/full-stack-development.png"
-                                alt="fullStackImg">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="about" data-color="#1d3a4d" class="section-2 row px-sm-5 py-5 secondary-bg">
-                <div class="col-12 overflow-hidden">
-                    <h1 id="leftReveal" class="pb-4">About.</h1>
-                    <p id="bottomReveal" class="pb-3">
-                        <span>I'm&nbsp;<span style="font-weight: 600;">Shahin M Hashim</span></span>
-                        <span>a passionate, creative, and enthusiastic junior MERN Stack Web Developer,</span>
-                        <span>React Front End Developer, Express Backend Developer, Adobe Photoshop and Premiere</span>
-                        <span>Pro Editor currently studying as a fourth-year B-Tech Computer Science</span>
-                        <span>student at Rajadhani Institute of Engineering And Technology.</span>
-                    </p>
-                    <p id="bottomReveal" class="pb-3">
-                        <span>I have hands-on experience in designing, coding, and unit-testing websites for</span>
-                        <span>some time, But been doing Photo Editing And Video Editing for like 2 yrs that I</span>
-                        <span>have got a prolific knowledge and experience of software like Photoshop,</span>
-                        <span>Filmora, DaVinci, Premiere Pro ...etc</span>
-                    </p>
-                    <p id="bottomReveal" class="pb-3">
-                        <span>I enjoy working closely with others, have an eye for detail, and in identifying</span>
-                        <span>problems. As a Student,I am dedicated to my own continual self-development</span>
-                        <span>by learning new ideas, concepts, and programming adapting to any new environment.</span>
-                        <span>I am confident in my ability to be able to work closely with my clients</span>
-                        <span>and co-workers in bringing up the best possible solution to every problem.</span>
-                    </p>
-                </div>
-                <div class="col-6 col-md-4 p-3" id="topReveal">
-                    <h2 class="mb-4">Character</h2>
-                    <ul>
-                        <li>Genuine</li>
-                        <li>Adaptive</li>
-                        <li>Trustworthy</li>
-                        <li>Hardworking</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-4 p-3" id="topReveal">
-                    <h2 class="mb-4">Languages</h2>
-                    <p>English (Fluent)</p>
-                    <p>Malayalam (Native)</p>
-                </div>
-                <div id="interests" class="col-12 col-md-4 p-3 interests overflow-hidden">
-                    <div class="d-flex" style="gap: .5em;">
-                        <h2 style="flex: 1;" id="interestHeading" class="interest-heading">
-                            Interests
-                        </h2>
-                        <h2 style="flex: 1;"></h2>
+            <section id="about" data-color="#1d3a4d" class="row">
+                <div class="col-12 py-5">
+                    <div class="overflow-hidden">
+                        <h1 id="leftReveal" class="my-4">About.</h1>
+                        <p id="bottomReveal" class="my-3">
+                            <span>I'm&nbsp;<span style="font-weight: 600;">Shahin M Hashim</span></span>
+                            <span>a passionate, creative, and enthusiastic junior MERN Stack Web Developer,</span>
+                            <span>React Front End Developer, Express Backend Developer, Adobe Photoshop and
+                                Premiere</span>
+                            <span>Pro Editor currently studying as a fourth-year B-Tech Computer Science</span>
+                            <span>student at Rajadhani Institute of Engineering And Technology.</span>
+                        </p>
+                        <p id="bottomReveal" class="my-3">
+                            <span>I have hands-on experience in designing, coding, and unit-testing websites for</span>
+                            <span>some time, But been doing Photo Editing And Video Editing for like 2 yrs that I</span>
+                            <span>have got a prolific knowledge and experience of software like Photoshop,</span>
+                            <span>Filmora, DaVinci, Premiere Pro ...etc</span>
+                        </p>
+                        <p id="bottomReveal" class="my-3">
+                            <span>I enjoy working closely with others, have an eye for detail, and in identifying</span>
+                            <span>problems. As a Student,I am dedicated to my own continual self-development</span>
+                            <span>by learning new ideas, concepts, and programming adapting to any new
+                                environment.</span>
+                            <span>I am confident in my ability to be able to work closely with my clients</span>
+                            <span>and co-workers in bringing up the best possible solution to every problem.</span>
+                        </p>
                     </div>
-                    <div class="d-flex" style="gap: .5em; color: #ccff00;">
-                        <div style="flex: 1;">
-                            <p class="interest" style="background: #3451f5;">Music</p>
-                            <p class="interest" style="background: #3451f5;">Movies</p>
-                            <p class="interest" style="background: #3451f5;">Gaming</p>
+                </div>
+
+                <div class="col-6 col-md-4 pb-5">
+                    <div class="overflow-hidden">
+                        <div id="topReveal">
+                            <h2 class="mb-4">Character</h2>
+                            <ul>
+                                <li>Genuine</li>
+                                <li>Adaptive</li>
+                                <li>Trustworthy</li>
+                                <li>Hardworking</li>
+                            </ul>
                         </div>
-                        <div style="flex: 1">
-                            <p class="interest" style="background: #d327f1;">Programming</p>
-                            <p class="interest" style="background: #d327f1;">Photo Editing</p>
-                            <p class="interest" style="background: #d327f1;">Video Editing</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 pb-5">
+                    <div class="overflow-hidden">
+                        <div id="topReveal">
+                            <h2 class="mb-4">Languages</h2>
+                            <p>English (Fluent)</p>
+                            <p>Malayalam (Native)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 pb-5">
+                    <div class="overflow-hidden">
+                        <div class="d-flex">
+                            <h2 style="flex: 1;" class="interest-heading">
+                                Interests
+                            </h2>
+                            <h2 style="flex: 1;"></h2>
+                        </div>
+                        <div class="d-flex" style="color: #ccff00; gap: .5em;">
+                            <div style="flex: 1;">
+                                <p class="interest" style="background: #3451f5;">Music</p>
+                                <p class="interest" style="background: #3451f5;">Movies</p>
+                                <p class="interest" style="background: #3451f5;">Gaming</p>
+                            </div>
+                            <div style="flex: 1;">
+                                <p class="interest" style="background: #d327f1;">Programming</p>
+                                <p class="interest" style="background: #d327f1;">Photo Editing</p>
+                                <p class="interest" style="background: #d327f1;">Video Editing</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="expertise" data-color="#270622" class="section-3 row px-sm-5 py-5 secondary-bg">
-                <div class="col-12 col-md-6 order-md-1 p-3 overflow-hidden">
-                    <div id="rightReveal">
-                        <h1 class="mb-3 fs-1" style="text-decoration: underline;">Work Experience</h1>
-                        <h5 class="mb-3 fs-3">Innoval Digital Solutions Pvt Ltd (Intern)</h5>
-                        <ul>
-                            <li class="mb-2 fs-4">Attended Cloud Sap Training</li>
-                            <li class="mb-2 fs-4">Introduction To Artificial Intelligence</li>
-                            <li class="mb-2 fs-4">Familiarized With Team And Work Environment</li>
-                        </ul>
+            <section id="expertise" data-color="#270622" class="row py-5">
+                <div class="col-12 col-md-6 order-md-1 py-5">
+                    <div class="overflow-hidden">
+                        <div id="rightReveal">
+                            <h1 class="mb-3 fs-1" style="text-decoration: underline;">Work Experience</h1>
+                            <h5 class="mb-3 fs-3">Innoval Digital Solutions Pvt Ltd (Intern)</h5>
+                            <ul>
+                                <li class="mb-2 fs-4">Attended Cloud Sap Training</li>
+                                <li class="mb-2 fs-4">Introduction To Artificial Intelligence</li>
+                                <li class="mb-2 fs-4">Familiarized With Team And Work Environment</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 order-md-0 p-3 overflow-hidden">
-                    <div id="leftReveal">
-                        <h1 class="mb-3 fs-1" style="text-decoration: underline;">Certifications</h1>
-                        <ol>
-                            <li class="mb-2 fs-4">Crash Course On Python (Google)</li>
-                            <li class="mb-2 fs-4">Adobe Premiere Pro CC 2022 (Udemy)</li>
-                            <li class="mb-2 fs-4">Full Stack Web Development (Google)</li>
-                            <li class="mb-2 fs-4">Adobe Photoshop Masterclass (Udemy)</li>
-                            <li class="mb-2 fs-4">Introduction To Git And Github (Google)</li>
-                            <li class="mb-2 fs-4">Meta Certified React Frontend Developer (Udemy)</li>
-                        </ol>
+
+                <div class="col-12 col-md-6 order-md-0 pb-5">
+                    <div class="overflow-hidden">
+                        <div id="leftReveal">
+                            <h1 class="mb-3 fs-1" style="text-decoration: underline;">Certifications</h1>
+                            <ol>
+                                <li class="mb-2 fs-4">Crash Course On Python (Google)</li>
+                                <li class="mb-2 fs-4">Adobe Premiere Pro CC 2022 (Udemy)</li>
+                                <li class="mb-2 fs-4">Full Stack Web Development (Google)</li>
+                                <li class="mb-2 fs-4">Adobe Photoshop Masterclass (Udemy)</li>
+                                <li class="mb-2 fs-4">Introduction To Git And Github (Google)</li>
+                                <li class="mb-2 fs-4">Meta Certified React Frontend Developer (Udemy)</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 order-md-2 p-3">
-                    <h1 class="mb-3 fs-1" style="text-decoration: underline;">Skills</h1>
-                    <div class="skills" id="skills"></div>
+
+                <div class="col-12 order-md-2 pb-5">
+                    <div class="overflow-hidden">
+                        <h1 class="mb-3 fs-1" style="text-decoration: underline;">Skills</h1>
+                        <div class="skills" id="skills"></div>
+                    </div>
                 </div>
             </section>
 
-            <section id="projects" data-color="#1d3a4d" class="section-4 row px-sm-5 py-5 primary-bg">
-                <div class="col-12 p-3">
-                    <h1 class="mb-3">MY PROJECTS</h1>
-                    <h3 class="mb-5">A Collection Of My Latest Works</h3>
-                    <div id="slides" class="position-relative">
-                        <div class="projects">
-                            <div class="slide fade">
-                                <a href="https://github.com/shahin-m-hashim/Team-Sync" target="_blank">
-                                    <div class="number">1/5</div>
-                                    <img src="./assets/images/teamSync.png" alt="teamSync">
-                                    <div class=" pr-title">Team Sync</div>
-                                </a>
+            <section id="projects" data-color="#1d3a4d" class="row py-5">
+                <div class="col-12 py-5">
+                    <div class="overflow-hidden">
+                        <h1 class="mb-3">MY PROJECTS</h1>
+                        <h3 class="mb-5">A Collection Of My Latest Works</h3>
+                        <div id="slides" class="position-relative">
+                            <div class="projects">
+                                <div class="slide fade">
+                                    <a href="https://github.com/shahin-m-hashim/Team-Sync" target="_blank">
+                                        <div class="number">1/5</div>
+                                        <img src="./assets/images/teamSync.png" alt="teamSync">
+                                        <div class=" pr-title">Team Sync</div>
+                                    </a>
+                                </div>
+
+                                <div class="slide fade">
+                                    <a href="https://github.com/shahin-m-hashim/NFC_Plus" target="_blank">
+                                        <div class="number">2/5</div>
+                                        <img src="./assets/images/itiha.png" alt="itiha">
+                                        <div class="pr-title">Itiha</div>
+                                    </a>
+                                </div>
+
+                                <div class="slide fade">
+                                    <a href="https://github.com/shahin-m-hashim/NFC_Plus" target="_blank">
+                                        <div class="number">3/5</div>
+                                        <img src="./assets/images/nfcPlus.jpg" alt="nfcPlus">
+                                        <div class="pr-title">NFC Plus</div>
+                                    </a>
+                                </div>
+
+                                <a class="prev-slide" onclick="handleSlide(-1)">&#10094;</a>
+                                <a class="next-slide" onclick="handleSlide(1)">&#10095;</a>
                             </div>
 
-                            <div class="slide fade">
-                                <a href="https://github.com/shahin-m-hashim/NFC_Plus" target="_blank">
-                                    <div class="number">2/5</div>
-                                    <img src="./assets/images/itiha.png" alt="itiha">
-                                    <div class="pr-title">Itiha</div>
-                                </a>
+                            <div class="text-center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
                             </div>
-
-                            <div class="slide fade">
-                                <a href="https://github.com/shahin-m-hashim/NFC_Plus" target="_blank">
-                                    <div class="number">3/5</div>
-                                    <img src="./assets/images/nfcPlus.jpg" alt="nfcPlus">
-                                    <div class="pr-title">NFC Plus</div>
-                                </a>
-                            </div>
-
-                            <a class="prev-slide" onclick="handleSlide(-1)">&#10094;</a>
-                            <a class="next-slide" onclick="handleSlide(1)">&#10095;</a>
-                        </div>
-
-                        <div class="text-center">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
                         </div>
                     </div>
-            </section>
-
-            <section id="contact" data-color="#270622" class="section-5 row px-sm-5 py-5 secondary-bg">
-                <div class="position-relative col-12 p-3">
-                    <h1 class="mb-3">Socials</h1>
-                    <h2 class="mb-3">Lets Connect</h2>
-                    <div class="mb-5 mb-md-3 socials d-flex justify-content-between p-3">
-                        <a href="https://github.com/shahin-m-hashim" class="social github-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/shahin-m-hashim" class="social linkedin-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/shahin_m_hashim" class="social instagram-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="email mb-5">
-                        <h1 class="mb-3">Have A Project In Mind ?</h1>
-                        <h2 class="mb-3">Come Let's Work Together</h2>
-                        <h2 class="mb-3">Feel Free to reach out by an email</h2>
-                        <a href="mailto:shahinmhashim@gmail.com" class="email-btn-link">Connect&#x2192;</a>
-                    </div>
-                    <footer>
-                        <span>Designed and developed by SHAHIN M HASHIM</span><br>
-                        <span>2024 All rights reserved. &#169;</span>
-                    </footer>
                 </div>
             </section>
+
+            <section id="contact" data-color="#270622" class="row py-5">
+                <div class="col-12 py-5">
+                    <div class="overflow-hidden">
+                        <h1 class="mb-3">Socials</h1>
+                        <h2 class="mb-3">Lets Connect</h2>
+                        <div class="my-5 socials d-flex justify-content-between px-3">
+                            <a href="https://github.com/shahin-m-hashim" class="social github-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shahin-m-hashim" class="social linkedin-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/shahin_m_hashim" class="social instagram-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="email">
+                            <h1 class="mb-3">Have A Project In Mind ?</h1>
+                            <h2 class="mb-3">Come Let's Work Together</h2>
+                            <h2 class="mb-3">Feel Free to reach out by an email</h2>
+                            <a href="mailto:shahinmhashim@gmail.com" class="email-btn-link">Connect&#x2192;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <span>Designed and developed by SHAHIN M HASHIM</span><br>
+                <span>2024 All rights reserved. &#169;</span>
+            </footer>
         </main>
     </div>
 

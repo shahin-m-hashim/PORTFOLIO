@@ -155,17 +155,17 @@ window.onload = function () {
     });
   });
 
+  const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+
   // Navigation Link Scroll Animation
   document.querySelectorAll("#nav-link").forEach((navLink) => {
-    navLink.addEventListener("click", function (e) {
+    navLink.addEventListener("click", function () {
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
 
       let startTime = null;
       const duration = 500;
-      const defaultOffset = 50;
-
-      const offset = targetId === "#home" ? 0 : defaultOffset;
+      const offset = isPortrait ? 0 : 50;
 
       const startPosition = window.scrollY;
       const targetOffset = targetElement.offsetTop - offset;
