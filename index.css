@@ -155,6 +155,11 @@ li {
 
 /* SECTION 1 */
 
+.home {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 .introduction {
   display: grid;
   grid-template-columns: 1fr;
