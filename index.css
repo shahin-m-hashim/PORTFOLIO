@@ -201,10 +201,142 @@ header {
   padding: 10px;
 }
 
+/* SECTION 4 */
 .skills {
   gap: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill p {
+  margin-bottom: -1em;
+}
+
+svg.radial-progress {
+  margin: 2em;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  background-color: rgb(29, 29, 28);
+}
+
+svg.radial-progress circle {
+  stroke: #fff;
+  fill: transparent;
+}
+
+svg.radial-progress circle.bar-static {
+  stroke-width: 10px;
+  stroke: #00ffee !important;
+}
+
+svg.radial-progress circle.bar--animated {
+  stroke: #001aff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-dasharray: 219.91148575129;
+  stroke-dashoffset: 219.91148575129;
+}
+
+svg.radial-progress text {
+  fill: #ccff00;
+  text-anchor: middle;
+  text-shadow: 0 0 5px #0000007a;
+}
+
+/* SECTION 5 */
+/* .slide {
+  display: none;
+} */
+
+.slide .number {
+  top: 0;
+  left: 0;
+  font-size: 2vw;
+  color: #ff0000;
+  font-weight: bold;
+  position: absolute;
+  padding: 0.1vw 0.5vw;
+  background-size: 10px;
+  background-color: rgb(51, 255, 0);
+}
+
+.slide a {
+  text-decoration: none;
+}
+
+.prev-slide,
+.next-slide {
+  top: 40%;
+  font-size: 2vw;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  position: absolute;
+  padding: 0.5vw 0.7vw;
+  transition: 0.6s ease;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 128, 255);
+}
+
+.prev-slide {
+  left: 0;
+}
+
+.next-slide {
+  right: 0;
+}
+
+.pr-title {
+  width: 100%;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(0, 191, 255);
+}
+
+.dot {
+  width: 0.7vw;
+  height: 0.7vw;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(0, 255, 0);
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #0011ff;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade:not(.show) {
+  opacity: 1;
 }
 
 /* MEDIA QUERIES */
