@@ -1,14 +1,14 @@
 const skills = {
   HTML: 100,
   CSS: 100,
+  Python: 70,
   "Java Script": 100,
-  Bootstrap: 90,
-  React: 95,
   "Type Script": 60,
-  Tailwind: 80,
+  React: 90,
+  Bootstrap: 90,
+  Tailwind: 90,
   "Express JS": 60,
   "Mongo DB": 60,
-  Python: 70,
   SQL: 60,
   GIT: 90,
 };
@@ -207,22 +207,6 @@ window.onload = function () {
         document.body.style.backgroundColor = box.dataset.color;
       }
     });
-  });
-
-  // slogan
-  new Typed("#slogTxt1", {
-    strings: ["Websites And Web Applications"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    showCursor: false,
-    loop: false,
-  });
-
-  new Typed("#slogTxt2", {
-    strings: ["That Just Feels RIGHT"],
-    typeSpeed: 150,
-    backSpeed: 110,
-    loop: true,
   });
 
   // section 1 job caption header
