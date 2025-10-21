@@ -1,21 +1,13 @@
 :root {
   --grey: #d3d3d3;
   --github: #2b3137;
+  --bg-color: #e5e5e5;
   --twitter: #55acee;
   --facebook: #3b5999;
   --linkedin: #0077b5;
-  --bg-color: #270622;
   --hover-color: #12f7ff;
+  --primary-text-color: black;
   --secondary-bg-color: #1d3a4d;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #f5f5f5;
-  --neon-box-shadow: 0 0 0.5rem #12f7ff;
-
-  --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
-    0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3),
-    0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3),
-    0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3),
-    0 0 150px rgba(18, 247, 255, 0.3);
 }
 
 *,
@@ -37,8 +29,8 @@ body {
   padding: 0;
   cursor: none;
   min-width: 320px;
-  background-color: #270622;
   color: var(--primary-text-color);
+  background-color: var(--bg-color);
   font-family: "Roboto", sans-serif;
   transition: background-color 0.5s ease-in-out;
 }
@@ -85,8 +77,8 @@ li {
 .bubble-cursor {
   opacity: 1;
   width: 3rem;
-  z-index: 1500;
   height: 3rem;
+  z-index: 1500;
   position: fixed;
   border-radius: 50%;
   pointer-events: none;
@@ -130,7 +122,7 @@ li {
   z-index: 1000;
   position: fixed;
   inset: 0 0 auto 0;
-  background-color: #212121 !important;
+  background-color: brown !important;
 }
 
 .nav-link {
@@ -172,41 +164,13 @@ header {
 
 /* Resume Button */
 .resume-btn {
-  z-index: 1;
+  color: white;
   font-weight: 700;
-  transition: 0.6s;
-  overflow: hidden;
   padding: 0.5em 1em;
   border-radius: 5px;
-  position: relative;
   display: inline-flex;
   text-decoration: none;
-  color: var(--bg-color);
-  justify-content: center;
-  box-shadow: var(--neon-box-shadow);
-  background-color: var(--hover-color);
-  border: 2px solid var(--hover-color);
-}
-
-.resume-btn::before {
-  top: 0;
-  left: 0;
-  width: 0%;
-  content: "";
-  z-index: -1;
-  height: 100%;
-  transition: 0.4s;
-  position: absolute;
-  background: var(--bg-color);
-}
-
-.resume-btn:hover {
-  color: var(--hover-color);
-  background-color: var(--bg-color);
-}
-
-.resume-btn:hover::before {
-  width: 100%;
+  background-color: brown;
 }
 
 .greeting-txt {

@@ -198,17 +198,6 @@ window.onload = function () {
     });
   });
 
-  // Background Scroll Animation
-  const sections = document.querySelectorAll("section");
-
-  window.addEventListener("scroll", () => {
-    sections.forEach((box) => {
-      if (box.getBoundingClientRect().top - 60 <= document.body.scrollTop) {
-        document.body.style.backgroundColor = box.dataset.color;
-      }
-    });
-  });
-
   // section 1 job caption header
   const words = document.querySelectorAll(".word");
   words.forEach((word) => {
